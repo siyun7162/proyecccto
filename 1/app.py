@@ -10,7 +10,7 @@ from matplotlib import font_manager, rc
 # 시스템에 따라 적절한 폰트 선택
 # plt.rcParams["font.family"] = "AppleGothic"     # macOS
 plt.rcParams["font.family"] = "Malgun Gothic"  # Windows
-# plt.rcParams["font.family"] = "NanumGothic"    # Linux
+#plt.rcParams["font.family"] = "NanumGothic"    # Linux
 plt.rcParams["axes.unicode_minus"] = False       # 음수 깨짐 방지
 # --------------------------------------------------
 # 1. Streamlit 웹페이지 설정
