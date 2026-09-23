@@ -2,11 +2,16 @@ from pathlib import Path
 
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib import font_manager, rc
 
-plt.rcParams["font.family"] = "Malgun Gothic"
-
+# 시스템에 따라 적절한 폰트 선택
+# plt.rcParams["font.family"] = "AppleGothic"     # macOS
+plt.rcParams["font.family"] = "Malgun Gothic"  # Windows
+# plt.rcParams["font.family"] = "NanumGothic"    # Linux
+plt.rcParams["axes.unicode_minus"] = False       # 음수 깨짐 방지
 # --------------------------------------------------
 # 1. Streamlit 웹페이지 설정
 # --------------------------------------------------
@@ -24,11 +29,6 @@ st.title("부산항 시설별 KPI 대시보드")
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = BASE_DIR / "marine.csv"
-FONT_PATH = (
-    BASE_DIR
-    / "fonts"
-    / "NotoSansKR-Regular.ttf"
-)
 
 
 # CSV 파일이 실제로 있는지 확인합니다.
