@@ -223,7 +223,7 @@ sns.lineplot(
 )
 
 ax.set_title(
-    f"{selected_region} 월간 총 처리실적(톤)"
+    f"{selected_region} Monthly Total Throughput (Tons)"
 )
 
 ax.set_xlabel("year_month")
@@ -560,13 +560,13 @@ ax.axhline(
 
 # 그래프 제목을 설정합니다.
 ax.set_title(
-    f"{selected_region} 월별 시간당 처리실적의 평균 대비 차이율"
+    f"{selected_region} Variance Rate of Monthly Hourly Performance Against Average"
 )
 
 
 # X축과 Y축 이름을 설정합니다.
 ax.set_xlabel("year_month")
-ax.set_ylabel("Percentage Deviation from Average (%)")
+ax.set_ylabel("Percentage Deviation from Average(%)")
 
 
 # 연월이 겹치지 않도록 글자를 기울입니다.
