@@ -18,18 +18,17 @@ st.set_page_config(
 
 st.title("부산항 시설별 KPI 대시보드")
 
-
-# 그래프 한글 깨짐 방지
-plt.rcParams["font.family"] = "Malgun Gothic"
-plt.rcParams["axes.unicode_minus"] = False
-
-
 # --------------------------------------------------
 # 2. CSV 파일 위치 설정
 # --------------------------------------------------
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = BASE_DIR / "marine.csv"
+FONT_PATH = (
+    BASE_DIR
+    / "fonts"
+    / "NotoSansKR-Regular.ttf"
+)
 
 
 # CSV 파일이 실제로 있는지 확인합니다.
