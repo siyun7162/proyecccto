@@ -5,6 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+plt.rcParams["font.family"] = "Malgun Gothic"
 
 # --------------------------------------------------
 # 1. Streamlit 웹페이지 설정
