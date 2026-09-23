@@ -226,8 +226,8 @@ ax.set_title(
     f"{selected_region} 월간 총 처리실적(톤)"
 )
 
-ax.set_xlabel("연월")
-ax.set_ylabel("월간 총 처리실적(톤)")
+ax.set_xlabel("year_month")
+ax.set_ylabel("month_total(T)")
 
 # 1e6을 없애고 9,000,000처럼 표시합니다.
 ax.yaxis.set_major_formatter(
@@ -565,8 +565,8 @@ ax.set_title(
 
 
 # X축과 Y축 이름을 설정합니다.
-ax.set_xlabel("연월")
-ax.set_ylabel("평균 대비 차이율 (%)")
+ax.set_xlabel("year_month")
+ax.set_ylabel("Percentage Deviation from Average (%)")
 
 
 # 연월이 겹치지 않도록 글자를 기울입니다.
